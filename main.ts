@@ -114,10 +114,26 @@ let よしだすずか = "040A0AFC242200FC0202020400425CE044AA22A2004040506AFC40
 let ヨシダスズカ = "42525252527E00A25202040830001022D25448F000024244445864020002424444D86482004244F840427E00"
 let SuZuka_YosHida = "64929292924C003C0202043E0082868A92A2C2003C0202043E00FE08142200042A2A2A1E0000008040201E204080001C2222221C00122A2A2A2400FE10101010FE00BE001C222212FE00042A2A2A1E00"
 let welcome_SuZuka = "F80618601806F8001C2A2A2A180080FE001C22222214001C2222221C003E201E201E001C2A2A2A1800000064929292924C003C0202043E0082868A92A2C2003C0202043E00FE08142200042A2A2A1E00"
-文字リスト = [welcome_SuZuka, SuZuka_YosHida, よしだすずか, ヨシダスズカ, 吉田涼香]
+文字リスト = [
+welcome_SuZuka,
+SuZuka_YosHida,
+よしだすずか,
+ヨシダスズカ,
+吉田涼香
+]
 let デモ文字 = "WelCome SuZuka"
-文字色リスト = [neopixel.colors(NeoPixelColors.White), neopixel.colors(NeoPixelColors.Red), neopixel.colors(NeoPixelColors.Green), neopixel.colors(NeoPixelColors.Blue)]
-背景色リスト = [neopixel.colors(NeoPixelColors.Black), neopixel.colors(NeoPixelColors.Black), neopixel.colors(NeoPixelColors.Black), neopixel.colors(NeoPixelColors.Black)]
+文字色リスト = [
+neopixel.colors(NeoPixelColors.White),
+neopixel.colors(NeoPixelColors.Red),
+neopixel.colors(NeoPixelColors.Green),
+neopixel.colors(NeoPixelColors.Blue)
+]
+背景色リスト = [
+neopixel.colors(NeoPixelColors.Black),
+neopixel.colors(NeoPixelColors.Black),
+neopixel.colors(NeoPixelColors.Black),
+neopixel.colors(NeoPixelColors.Black)
+]
 行末空白 = 8
 文字選択 = 0
 表示文字選択(文字選択)
@@ -151,6 +167,6 @@ basic.forever(function () {
 })
 control.inBackground(function () {
     while (true) {
-        basic.showString("" + (デモ文字))
+        basic.showString(デモ文字)
     }
 })
